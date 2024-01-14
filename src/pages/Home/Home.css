@@ -76,7 +76,7 @@
   .home-page h1 {
     color: #fcba03;
     padding: 25px 0;
-    font-size: 25px;
+    font-size: 22px;
   }
   .home-page--button {
     display: flex;
@@ -88,6 +88,7 @@
     height: 40px;
     margin-right: 0px;
     margin-bottom: 10px;
+    font-size: 18px;
   }
 
   .home-page--button a {
@@ -97,5 +98,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
   }
 }
