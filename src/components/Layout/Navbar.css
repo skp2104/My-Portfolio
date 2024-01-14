@@ -1,0 +1,45 @@
+.sidebar-section {
+  /* display: flex; */
+}
+
+.sidebar-menu {
+  background-color: #fcba03;
+  height: 100vh;
+  width: 80px;
+  position: sticky;
+  top: 0;
+}
+.sidebar-menu-active {
+  width: 250px;
+  background-color: #eb3440;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+.sidebar-toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 15px;
+  height: 5vh;
+}
+.sidebar-toggle-icon-active {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.sidebar-toggle-icon svg,
+.sidebar-toggle-icon-active svg {
+  color: white;
+  width: 26px;
+  height: auto;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+@media screen and (max-width: 749px) {
+  width: 50px;
+}

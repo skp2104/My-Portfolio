@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import Navbar from './components/Layout/Navbar';
 import './App.css';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Education from './pages/Education/Education';
+import TechStack from './pages/TechStack/TechStack';
+import Contact from './pages/Contact/Contact';
+import ScrollToTop from 'react-scroll-to-top';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='app-container'>
+        <div className='navbar-comp'>
+          <Navbar />
+        </div>
+        <div className='other-comp'>
+          <Home />
+          <About />
+          <Education />
+          <TechStack />
+          <Contact />
+        </div>
+      </div>
+      <ScrollToTop
+        smooth
+        color='#f29f67'
+        style={{ backgroundColor: '#1e1e2c', borderRadius: '50%' }}
+      />
+    </>
   );
 }
 
