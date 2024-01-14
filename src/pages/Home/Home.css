@@ -84,7 +84,7 @@
   }
   .home-page--button button {
     padding: 0;
-    width: 225px;
+    width: 200px;
     height: 40px;
     margin-right: 0px;
     margin-bottom: 10px;
@@ -93,7 +93,7 @@
 
   .home-page--button a {
     padding: 0;
-    width: 225px;
+    width: 200px;
     height: 40px;
     display: flex;
     justify-content: center;
