@@ -32,7 +32,7 @@ const Home = () => {
             <button>Hire Me</button>
           </Link>
           <a href={Resume} download='Shravan.pdf'>
-            Download CV
+            Resume
           </a>
         </div>
       </div>
