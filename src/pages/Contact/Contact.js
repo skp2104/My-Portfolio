@@ -1,13 +1,14 @@
 import React from 'react';
 import '../Contact/Contact.css';
-import { FaGithub } from 'react-icons/fa';
-import ContactUs from '../../assets/contact-us.jpg';
-import fb from '../../assets/fb.jpg';
-import insta from '../../assets/instagram.jpg';
-import twitter from '../../assets/twitter.jpg';
-import github from '../../assets/github.png';
-import watsapp from '../../assets/whatsapp.png';
-import linkedin from '../../assets/linkedin.jpg';
+import ContactUs from '../../assets/contact.avif';
+import {
+  FaWhatsapp,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaGithub,
+} from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -22,25 +23,25 @@ const Contact = () => {
             <h2>Connect with Me on:</h2>
             <div className='contact-social-icon'>
               <a href='tel:6290669979'>
-                <img src={watsapp} alt='' />
+                <FaWhatsapp />
               </a>
               <a href='https://www.facebook.com/shravan.don/' target='_blank'>
-                <img src={fb} alt='' />
+                <FaFacebook />
               </a>
               <a
                 href='https://www.instagram.com/kumar_shravan21/'
                 target='_blank'
               >
-                <img src={insta} alt='' />
+                <FaInstagram />
               </a>
               <a href='https://twitter.com/rajshrvn' target='_blank'>
-                <img src={twitter} alt='' />
+                <FaTwitter />
               </a>
               <a href='https://www.linkedin.com/in/skp2104/' target='_blank'>
-                <img src={linkedin} alt='' />
+                <FaLinkedin />
               </a>
               <a href='https://github.com/skp2104' target='_blank'>
-                <img src={github} alt='' />
+                <FaGithub />
               </a>
             </div>
           </div>

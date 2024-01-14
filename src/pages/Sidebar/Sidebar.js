@@ -9,7 +9,12 @@ import { MdOutlineWorkOutline } from 'react-icons/md';
 import { IoIosContact } from 'react-icons/io';
 import { Link } from 'react-scroll';
 
-const Sidebar = ({ toggle }) => {
+const Sidebar = ({ toggle, onToggleChange2 }) => {
+  const handleToggleClick2 = () => {
+    const newToggleValue2 = !toggle;
+    onToggleChange2(newToggleValue2);
+  };
+
   return (
     <>
       {toggle ? (
@@ -30,7 +35,10 @@ const Sidebar = ({ toggle }) => {
                 offset={-100}
                 duration={1000}
               >
-                <div className='sidebar-icon-active'>
+                <div
+                  className='sidebar-icon-active'
+                  onClick={handleToggleClick2}
+                >
                   <FcHome />
                   <h3>Home</h3>
                 </div>
@@ -42,7 +50,10 @@ const Sidebar = ({ toggle }) => {
                 offset={-100}
                 duration={1000}
               >
-                <div className='sidebar-icon-active'>
+                <div
+                  className='sidebar-icon-active'
+                  onClick={handleToggleClick2}
+                >
                   <FcAbout />
                   <h3>About</h3>
                 </div>
@@ -54,7 +65,10 @@ const Sidebar = ({ toggle }) => {
                 offset={-100}
                 duration={1000}
               >
-                <div className='sidebar-icon-active'>
+                <div
+                  className='sidebar-icon-active'
+                  onClick={handleToggleClick2}
+                >
                   <IoSchool />
                   <h3>Education</h3>
                 </div>
@@ -66,7 +80,10 @@ const Sidebar = ({ toggle }) => {
                 offset={-100}
                 duration={1000}
               >
-                <div className='sidebar-icon-active'>
+                <div
+                  className='sidebar-icon-active'
+                  onClick={handleToggleClick2}
+                >
                   <FcEngineering />
                   <h3>Tech Stack</h3>
                 </div>
@@ -78,7 +95,10 @@ const Sidebar = ({ toggle }) => {
                 offset={-100}
                 duration={1000}
               >
-                <div className='sidebar-icon-active'>
+                <div
+                  className='sidebar-icon-active'
+                  onClick={handleToggleClick2}
+                >
                   <GrProjects />
                   <h3>Projects</h3>
                 </div>
@@ -90,7 +110,10 @@ const Sidebar = ({ toggle }) => {
                 offset={-100}
                 duration={1000}
               >
-                <div className='sidebar-icon-active'>
+                <div
+                  className='sidebar-icon-active'
+                  onClick={handleToggleClick2}
+                >
                   <MdOutlineWorkOutline />
                   <h3>Work Experience</h3>
                 </div>
@@ -102,7 +125,10 @@ const Sidebar = ({ toggle }) => {
                 offset={-100}
                 duration={1000}
               >
-                <div className='sidebar-icon-active'>
+                <div
+                  className='sidebar-icon-active'
+                  onClick={handleToggleClick2}
+                >
                   <IoIosContact />
                   <h3>Contact</h3>
                 </div>
