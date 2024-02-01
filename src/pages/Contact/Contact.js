@@ -25,7 +25,7 @@ const Contact = () => {
               <a href='tel:6290669979'>
                 <FaWhatsapp />
               </a>
-              <a href='https://www.facebook.com/shravan.don/' target='_blank'>
+              <a href=''>
                 <FaFacebook />
               </a>
               <a
